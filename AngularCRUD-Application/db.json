@@ -1,0 +1,41 @@
+{
+  "productList": [
+    {
+      "productName": "chamika",
+      "category": "Vegitables",
+      "freshness": "Brand New",
+      "price": 200,
+      "comment": "hi",
+      "date": "2022-09-14T18:30:00.000Z",
+      "id": 1
+    },
+    {
+      "productName": "supun",
+      "category": "Electronic",
+      "freshness": "Second Hand",
+      "price": 450,
+      "comment": "nothing",
+      "date": "2022-09-05T18:30:00.000Z",
+      "id": 2
+    },
+    {
+      "productName": "Nimal",
+      "category": "Electronic",
+      "freshness": "Good Condition",
+      "price": 800,
+      "comment": "No",
+      "date": "2022-09-13T18:30:00.000Z",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
