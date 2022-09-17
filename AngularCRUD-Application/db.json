@@ -26,6 +26,33 @@
       "comment": "No",
       "date": "2022-09-13T18:30:00.000Z",
       "id": 3
+    },
+    {
+      "productName": "sandaruwan",
+      "category": "Electronic",
+      "freshness": "Brand New",
+      "price": 1000,
+      "comment": "it is very good",
+      "date": "2022-09-07T18:30:00.000Z",
+      "id": 4
+    },
+    {
+      "productName": "wijesundara",
+      "category": "Electronic",
+      "freshness": "Brand New",
+      "price": 700,
+      "comment": "nice",
+      "date": "2022-09-08T18:30:00.000Z",
+      "id": 5
+    },
+    {
+      "productName": "Kamala",
+      "category": "Vegitables",
+      "freshness": "Second Hand",
+      "price": 800,
+      "comment": "fine bro",
+      "date": "2022-09-05T18:30:00.000Z",
+      "id": 6
     }
   ],
   "comments": [
