@@ -17,7 +17,7 @@ import {MatTableDataSource} from '@angular/material/table';
 export class AppComponent implements OnInit{
   title = 'Angular13Crud';
 
-  displayedColumns: string[] = ['productName', 'category','date','freshness', 'price', 'comment'];
+  displayedColumns: string[] = ['productName', 'category','date','freshness', 'price', 'comment','action'];
   dataSource!: MatTableDataSource<any>;
 
   @ViewChild(MatPaginator) paginator! : MatPaginator;
@@ -34,6 +34,10 @@ export class AppComponent implements OnInit{
   openDialog() {
     this.dialog.open(DialogComponent, {
       width:'30%'
+    }).afterClosed().subscribe(val=>{
+      if(val ==='save'){
+        this.getAllProducts();
+      }
     });
   }
   getAllProducts(){
@@ -51,7 +55,6 @@ export class AppComponent implements OnInit{
     })
   }
 
-
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
@@ -61,5 +64,28 @@ export class AppComponent implements OnInit{
     }
   }
 
+  editProduct(row : any){  
+    this.dialog.open(DialogComponent, {
+        width:'30%',
+        data:row
+     
+    }).afterClosed().subscribe(val=>{
+     if(val==='update'){
+      this.getAllProducts();
+     }
+    });
+  }
+
+  deleteProduct(id : number){
+    this.api.deleteProduct(id).subscribe({
+      next:(res) =>{
+        alert("product delete successfully");
+        this.getAllProducts();
+      },
+      error:()=>{
+        alert("Error while deleting the poroduct");
+      }
+    })
+  }
   
 }

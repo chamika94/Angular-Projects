@@ -1,15 +1,6 @@
 {
   "productList": [
     {
-      "productName": "chamika",
-      "category": "Vegitables",
-      "freshness": "Brand New",
-      "price": 200,
-      "comment": "hi",
-      "date": "2022-09-14T18:30:00.000Z",
-      "id": 1
-    },
-    {
       "productName": "supun",
       "category": "Electronic",
       "freshness": "Second Hand",
@@ -53,6 +44,33 @@
       "comment": "fine bro",
       "date": "2022-09-05T18:30:00.000Z",
       "id": 6
+    },
+    {
+      "productName": "prageeth",
+      "category": "Vegitables",
+      "freshness": "Second Hand",
+      "price": 500,
+      "comment": "hi",
+      "date": "2022-09-08T18:30:00.000Z",
+      "id": 7
+    },
+    {
+      "productName": "chamika",
+      "category": "Vegitables",
+      "freshness": "Brand New",
+      "price": 500,
+      "comment": "hi",
+      "date": "2022-09-14T18:30:00.000Z",
+      "id": 9
+    },
+    {
+      "productName": "chamikaaa",
+      "category": "Vegitables",
+      "freshness": "Brand New",
+      "price": 200,
+      "comment": "hi",
+      "date": "2022-09-14T18:30:00.000Z",
+      "id": 10
     }
   ],
   "comments": [
